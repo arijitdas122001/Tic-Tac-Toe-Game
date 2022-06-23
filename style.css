@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+nav{
+    background-color:rgb(51, 2, 51);
+    height:30px;
+}
+nav ul{
+    color: white;
+    list-style: none;
+    font-size: 2vw;
+}
+.main::before{
+    content:"";
+    position: absolute;
+    background:url('bg.jpg') center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.8;
+}
+.maincontiner{
+    margin-top:22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:rgb(48, 64, 41); */
+}
+.tictac{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+}
+.box{
+    border: 2px solid black;
+    font-size:4vw;
+    font-size: 5rem;
+}
+.box:hover{
+    /* background-color:rgb(245, 181, 138); */
+    cursor: pointer;
+}
+.infoclass{
+    margin: 4rem;
+}
+.underinfoclas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:1rem;
+}  
+.wingf{
+  height: 0;
+  transition: height 0.2ms ease-in;
+  margin-left: 11rem;
+}
+
+#reset{
+    border: 2px solid black;
+    border-radius: 4px; 
+    width:4rem;
+    background-color: rgb(150, 146, 146);
+}
+
+#reset:hover{
+    cursor: pointer;
+    background-color: rgb(55, 7, 100);
+    color:white;
+}
+/* making utility classes for the later use */
+.bt-0{
+    border-top:0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.turninfo{
+    border: 4px solid black;
+    border-radius: 5px;
+    color: purple;
+    /* background-color: rgb(236, 208, 208); */
+    margin:9px;
+    padding: 7px 6px 6px 8px;
+    font-size: 2rem;
+}
